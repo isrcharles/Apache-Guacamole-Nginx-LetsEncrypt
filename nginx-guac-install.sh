@@ -67,4 +67,4 @@ systemctl start nginx
 #add-apt-repository ppa:certbot/certbot -y
 #apt-get update
 apt install python-certbot-nginx -y
-certbot --nginx -n -d $website -d www.$website --email $certbotemail --agree-tos --redirect --hsts
+certbot --nginx -n -d $website --email $certbotemail --agree-tos --redirect --hsts
