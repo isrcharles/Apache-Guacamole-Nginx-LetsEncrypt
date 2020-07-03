@@ -42,7 +42,7 @@ server {
     listen [::]:80 default_server;
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
-    server_name $website www.$website;
+    server_name $website;
     location / {
         proxy_pass $guacamoleurl;
         proxy_buffering off;
